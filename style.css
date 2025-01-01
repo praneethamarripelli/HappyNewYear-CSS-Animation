@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Playball&display=swap');
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:80vh;
+    background-color: black;
+}
+
+h1{
+    text-align: center;
+    font-size:10px;
+    font-family:"Playball", serif;
+    background:linear-gradient(45deg,yellow,rgb(131, 15, 88),cyan,lime);
+    background-size: 47px;
+    color:transparent;
+    background-clip: text;
+    width:10rem;
+    animation:vibrate-zoom 3s
+    linear infinite 1s;
+}
+
+@keyframes vibrate-zoom{
+    0%{transform:skewY(0deg);}
+    40%{transform:skewX(30deg);}
+    60%{transform:rotateY(50deg);}
+    80%{transform:skewX(30deg);}
+    100%{transform:skewY(0deg);
+    font-size:40px;}
+    
+
+}
